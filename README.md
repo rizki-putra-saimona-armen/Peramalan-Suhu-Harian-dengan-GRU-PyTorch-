@@ -1,0 +1,1 @@
+# Peramalan-Suhu-Harian-dengan-GRU-PyTorch-
