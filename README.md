@@ -1,4 +1,4 @@
-#  Part 5 — Peramalan Suhu Harian dengan GRU (PyTorch)
+#  Peramalan Suhu Harian dengan GRU (PyTorch)
 
 ![Python](https://img.shields.io/badge/Python-3.12-blue?style=flat-square&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-Deep%20Learning-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
@@ -124,7 +124,7 @@ Model dilatih dengan *early stopping* (patience) dan berhenti otomatis di **epoc
 | **30** | **5.93** | ** 4.76 (terbaik)** |
 | 35 | 5.83  | 4.83 (stop) |
 
-> 📈 **Interpretasi**: MSE terbaik ≈ **4.76**, setara **RMSE ≈ 2.18 °C**. Artinya rata-rata prediksi model meleset sekitar ±2°C dari suhu aktual — cukup solid untuk model deret waktu sederhana tanpa fitur eksternal (musim, kelembapan, dll).
+>  **Interpretasi**: MSE terbaik ≈ **4.76**, setara **RMSE ≈ 2.18 °C**. Artinya rata-rata prediksi model meleset sekitar ±2°C dari suhu aktual — cukup solid untuk model deret waktu sederhana tanpa fitur eksternal (musim, kelembapan, dll).
 
 ##  Hasil Forecasting
 
@@ -165,7 +165,7 @@ Notebook ini menguji model dalam beberapa skenario peramalan:
 └── utils.py                         # Fungsi bantu: data4pred, pred4pred
 ```
 
->  **Catatan teknis**: folder checkpoint & beberapa komentar di notebook masih memakai penamaan `LSTM` (peninggalan dari eksperimen sebelumnya), padahal arsitektur yang benar-benar dijalankan di sini adalah **GRU**. Tidak memengaruhi hasil, tapi worth di-*rename* untuk kerapian repo. 🙂
+>  **Catatan teknis**: folder checkpoint & beberapa komentar di notebook masih memakai penamaan `LSTM` (peninggalan dari eksperimen sebelumnya), padahal arsitektur yang benar-benar dijalankan di sini adalah **GRU**. Tidak memengaruhi hasil, tapi worth di-*rename* untuk kerapian repo. 
 
 ##  Cara Menjalankan
 
